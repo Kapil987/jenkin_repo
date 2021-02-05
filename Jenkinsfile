@@ -20,6 +20,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps { echo ' Deploy started'
+		   sh "sudo javac HelloWorld.java"
+		   sh "java HelloWorld"
                  
             }
         }
